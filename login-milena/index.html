@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <title>Tela de Login</title>
@@ -17,8 +19,15 @@
         <div class="container d-flex justify-content-center">
             <section class="row  mt-15 align-items-center">
 
-                <div class="row">
-                    <img class="img-fluid" src="../assets/logo-digcollege.svg" alt="logo">
+                <div class="d-flex row">
+                    <div class="col-9 d-flex">
+                        <img class="img-fluid" src="../assets/logo-digcollege.svg" alt="logo">
+                    </div>
+                    <div class="col-3 d-flex justify-content-end social_icon">
+                        <span><i class="bi bi-facebook col-1"></i></span>
+                        <span><i class="bi bi-google col-1"></i></span>
+                        <span><i class="bi bi-twitter col-1"></i></span>
+                    </div>
                 </div>
 
                 <div class="row">
@@ -27,28 +36,54 @@
                     </div>
                     <!--TODO: REVISAR metódo action etc -->
                     <form name="signin" method="POST" action="#" target="" autocomplete="off">
+                        
+                        <!-- Informar EMAIL -->
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="informe seu melhor email...">
-                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="floatingInput"
+                                placeholder="informe seu melhor email...">
+                            <label for="floatingInput" class="form-label">Email:</label>
                         </div>
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="password">Senha:</label>
+                        
+                        <!-- Informar a SENHA -->
+                        <div class=" form-floating mb-3">
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label class="form-label floatingPassword">Senha:</label>
+                            </div>
+                            <!-- TODO: Implementar comportamento com JS script.js -->
+                            <!-- funcionalidades do campo SENHA -->
+                            <div class="d-flex align-content-between">
+                                <!-- Lembrar a Senha --> 
+                                <div class="mb-3 form-check col-9">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Lembrar a senha</label>
+                                </div>
+                                <!-- Tornar a senha visível -->                                                            
+                                <div class="d-flex input-group-append col-3 justify-content-end">
+                                    <button class="btn btn-outline" type="button" id="togglePassword">
+                                        exibir senha <i class="bi bi-eye "></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
+
                         <!-- TODO: alterar a cor do botão para violeta claro (checar: o style="--bs-purple:#6f42c1;") -->
                         <div class="d-grid mb-3">
                             <button type="submit" class="btn btn-primary btn-lg">Acessar</button>
                         </div>
 
+                        
                         <!-- TODO: Retirar sublinhado -->
                         <div class="d-grid row">
                             <div class="btn">
                                 <button class="btn btn-link rounded-pill px-3" type="button">
-                                    <small><a class="link-opacity-75-hover" href="./reset-senha">Esqueceu a senha?</a></small>
+                                    <small><a class="link-opacity-75-hover" href="./reset-senha">Esqueceu a
+                                            senha?</a></small>
                                 </button>
                                 <button class="btn btn-link rounded-pill px-3" type="button">
-                                   <small><a class="link-opacity-75-hover" href="./index.html">
-                                        Não possui conta? Cadastrar agora.</a></small>
+                                    <small><a class="link-opacity-75-hover" href="./index.html">
+                                            Não possui conta? Cadastrar agora.</a></small>
                                 </button>
                             </div>
                         </div>
