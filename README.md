@@ -95,3 +95,10 @@ _________________________
 
   - ○ Cada time poderá escolher se vai ou não utilizar uma ferramenta de gestão das atividades, tais como, trello, github projects, github issues, Jira, etc
 # APP_WEB_HACKATHON
+
+● Integrantes 
+  - [Eugenio Brilhante](https://github.com/eugeniobr25)    
+  - [Thiago Pezzi](https://github.com/ThiagoPezzi)    
+  - [Madson Yung](https://github.com/madsonyung)    
+  - [Milena Fontenele](https://github.com/mifontenele)    
+  - [Pedro Galvao](https://github.com/PedroHDGalvao)    
