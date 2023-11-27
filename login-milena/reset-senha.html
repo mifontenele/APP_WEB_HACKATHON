@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- ... (o restante do seu cabeçalho permanece inalterado) ... -->
+</head>
+
+<body>
+
+    <main>
+        <div class="container d-flex justify-content-center">
+            <section class="row  mt-15 align-items-center">
+
+                <div class="row">
+                    <img class="img-fluid" src="../assets/logo-digcollege.svg" alt="logo">
+                </div>
+
+                <div class="row">
+                    <div class="mb-3">
+                        <h6><small>Para acessar a sua conta, informe os dados abaixo:</small></h6>
+                    </div>
+
+                    <form name="signin" method="POST" action="#" target="" autocomplete="off">
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput"
+                                placeholder="informe seu melhor email...">
+                            <label for="floatingInput" class="form-label">Email:</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword"
+                                placeholder="Password">
+                            <label class="form-label" for="floatingPassword">Senha:</label>
+                            <!-- SENHA VÍSIVEL -->
+                            <div class="input-group-append">
+                                <button class="btn btn-outline" type="button" id="togglePassword">
+                                    <i class="bi bi-eye"></i> <span id="passwordToggleText">Mostrar senha</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- TODO: alterar a cor do botão para violeta claro (checar: o style="--bs-purple:#6f42c1;") -->
+                        <div class="d-grid mb-3">
+                            <button type="submit" class="btn btn-primary btn-lg">Acessar</button>
+                        </div>
+
+                        <!-- TODO: Retirar sublinhado -->
+                        <div class="d-grid row">
+                            <div class="btn">
+                                <button class="btn btn-link rounded-pill px-3" type="button">
+                                    <small><a class="link-opacity-75-hover" href="./reset-senha">Esqueceu a
+                                            senha?</a></small>
+                                </button>
+                                <button class="btn btn-link rounded-pill px-3" type="button">
+                                    <small><a class="link-opacity-75-hover" href="./index.html">
+                                            Não possui conta? Cadastrar agora.</a></small>
+                                </button>
+                            </div>
+                        </div>
+
+                        <p></p>
+
+                    </form>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+    <!-- ... (o restante dos seus scripts permanece inalterado) ... -->
+</body>
+
+</html>
