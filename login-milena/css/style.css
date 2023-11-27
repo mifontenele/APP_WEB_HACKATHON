@@ -1,14 +1,36 @@
+:root {
+    /* Colors */
+    --card-pink: #FC5D89;
+    --card-purple: #7552F2;
+    --card-orange: #F2784B;
+    --card-blue: #1954FD;
+    --body-bg-light-grey:#F0F0F2;
+    --logo-dc-purple: #7571F9;
+    --logo-dc-pink:#BF1171;
+    --main-dark-text: #262223;
+    /* Font Sizes */
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-20: 20px;
+    --fs-24: 24px;
+    --fs-26: 26px;
+    --fs-28: 28px;
+    --fs-32: 32px;
+    --fs-40: 40px;
+    --fs-48: 48px;
+    --fs-64: 64px;
+}
 /* 
 
 .password_btn{
-    color: white;
-    background-color: #BF1162;
+    color: --body-bg-light-grey;
+    background-color: -logo-dc-pink;
     width: 100px;
     }
     
 .password_btn:hover{
-    color: #bf1162;
-    background-color: white;
+    color: logo-dc-pink;
+    background-color: --body-bg-light-grey;
     } */
 
 .card {
