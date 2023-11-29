@@ -1,3 +1,9 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+
 :root {
     /* Colors */
     --card-pink: #FC5D89;
@@ -29,7 +35,7 @@
     background-repeat: no-repeat;
     background-size: 1rem 1rem;
   } */
-/* 
+/*  
 
 .password_btn{
     color: --body-bg-light-grey;
@@ -42,6 +48,10 @@
     background-color: --body-bg-light-grey;
     } */
 
+    .container {
+        height: 100%;
+        align-content: center;        
+    }
 .card {
     height: 370px;
     margin-top: auto;
@@ -53,21 +63,26 @@
 .social_icon span {
     font-size: 40px;
     margin-left: 10px;
-    color: #BF1162;
+    color: var(--logo-dc-pink);
 }
 
 .social_icon span:hover {
-    color: white;
+    color: var(--bs-gray-600);
     cursor: pointer;
 }
 
 .login_btn {
     color: white;
     background-color: #BF1162;
-    width: 100px;
+    width: 100%;
+    border: none;
 }
 
 .login_btn:hover {
     color: #BF1162;
     background-color: white;
+}
+
+.img-fluid {
+    width: 50%
 }
