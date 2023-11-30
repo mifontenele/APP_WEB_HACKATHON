@@ -1,0 +1,169 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+:root {
+    /* Paleta de Cores dos Templates do repositorio do Chico */
+    --card-pink: #FC5D89;
+    --card-purple: #7552F2;
+    --card-orange: #F2784B;
+    --card-blue: #1954FD;
+    --body-bg-light-grey:#F0F0F2;
+    --logo-dc-purple: #7571F9;
+    --logo-dc-pink:#BF1171;
+    --main-dark-text: #262223;
+    /* Font Sizes */
+    /* --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-20: 20px;
+    --fs-24: 24px;
+    --fs-26: 26px;
+    --fs-28: 28px;
+    --fs-32: 32px;
+    --fs-40: 40px;
+    --fs-48: 48px;
+    --fs-64: 64px; */
+}
+
+html, body{
+    background-image: linear-gradient(to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0) 75%,
+    rgba(0, 0, 0, 0.8) 100%), url(../assets/img/img-students-2.jpg) !important;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.container{
+    height: 100%;
+    align-content: center;
+}
+
+.card{
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 500px;
+    height: auto;
+    background-color: rgba(0,0,0,0.8) !important;
+}
+
+img {
+    width: 55%;
+    margin-left: 15px;
+    margin-top: 35px;
+}
+
+.social_icon{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+
+.social_icon span{
+    font-size: 35px;
+    margin-left:10px;
+    margin-top: 20px;  
+    color: var(--logo-dc-pink);
+}
+
+.social_icon span:hover{
+    color: var(--body-bg-light-grey);
+    cursor: pointer;
+}
+
+p {
+    color:var(--body-bg-light-grey);
+}
+
+.bi-key-fill{
+    color: var(--logo-dc-pink);
+    font-size: 30px;
+}
+
+.bi-envelope-fill{
+    color: var(--logo-dc-pink);
+    font-size: 30px;
+}
+.form-control{
+    background-color: var(--body-bg-light-grey);
+    border: none;
+}
+
+.eye_btn{
+    font-size: 25px;
+    color: var(--logo-dc-pink);
+    background-color: var(--body-bg-light-grey);
+    border: none;
+}
+
+.eye_btn:hover{
+    color: var(--body-bg-light-grey);
+    background-color: var(--logo-dc-pink);
+    cursor: pointer;
+    border: none;
+    }
+/* 
+.card-header{
+    color: var(--body-bg-light-grey);
+    margin-top: 10px;
+    margin-left: 5px;
+} */
+
+.input-group-login span{
+    width: 50px;
+    background-color: var(--logo-dc-pink);
+    color: var(--body-bg-light-grey);
+    border:0 !important;
+}
+
+.input-group-text span {
+    background-color: var(--logo-dc-pink);  
+    color: var(--body-bg-light-grey);
+}
+
+input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.remember{
+    color: var(--body-bg-light-grey);
+    font-size: smaller;
+}
+
+.remember input{
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.login_btn{
+    color: var(--body-bg-light-grey);
+    background-color: var(--logo-dc-pink);
+    width: 100px;
+    height: auto;
+}
+
+.login_btn:hover{
+    color: var(--logo-dc-pink);
+    background-color: var(--body-bg-light-grey);
+}
+
+.links a{
+    color: var(--body-bg-light-grey);
+}
+
+.links a:hover{
+    color: var(--logo-dc-pink);  
+}
+
+
