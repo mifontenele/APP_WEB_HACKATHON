@@ -13,17 +13,6 @@
     --logo-dc-purple: #7571F9;
     --logo-dc-pink:#BF1171;
     --main-dark-text: #262223;
-    /* Font Sizes */
-    /* --fs-16: 16px;
-    --fs-18: 18px;
-    --fs-20: 20px;
-    --fs-24: 24px;
-    --fs-26: 26px;
-    --fs-28: 28px;
-    --fs-32: 32px;
-    --fs-40: 40px;
-    --fs-48: 48px;
-    --fs-64: 64px; */
 }
 
 html, body{
@@ -31,7 +20,7 @@ html, body{
     rgba(0, 0, 0, 0.8) 0,
     rgba(0, 0, 0, 0) 40%,
     rgba(0, 0, 0, 0) 75%,
-    rgba(0, 0, 0, 0.8) 100%), url(../assets/img/img-students-2.jpg) !important;
+    rgba(0, 0, 0, 0.7) 100%), url(../assets/img/img-students-2.jpg) !important;
     display: flex;
     align-items: center;
     width: 100%;
@@ -43,14 +32,13 @@ html, body{
 
 .container{
     height: 100%;
-    align-content: center;
 }
 
 .card{
     height: 370px;
     margin-top: auto;
     margin-bottom: auto;
-    width: 500px;
+    width: 480px;
     height: auto;
     background-color: rgba(0,0,0,0.8) !important;
 }
@@ -80,26 +68,28 @@ img {
 }
 
 p {
-    color:var(--body-bg-light-grey);
+    color:var(--logo-dc-pink);
+    margin-left: 8px;
 }
 
 .bi-key-fill{
     color: var(--logo-dc-pink);
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .bi-envelope-fill{
     color: var(--logo-dc-pink);
-    font-size: 30px;
-}
-.form-control{
-    background-color: var(--body-bg-light-grey);
-    border: none;
+    font-size: 25px;
 }
 
 .eye_btn{
     font-size: 25px;
     color: var(--logo-dc-pink);
+    background-color: var(--body-bg-light-grey);
+    border: none;
+}
+
+.form-control{
     background-color: var(--body-bg-light-grey);
     border: none;
 }
@@ -110,12 +100,6 @@ p {
     cursor: pointer;
     border: none;
     }
-/* 
-.card-header{
-    color: var(--body-bg-light-grey);
-    margin-top: 10px;
-    margin-left: 5px;
-} */
 
 .input-group-login span{
     width: 50px;
@@ -142,9 +126,10 @@ input:focus{
 .remember input{
     width: 15px;
     height: 15px;
-    margin-left: 15px;
-    margin-right: 5px;
+    margin-right: 8px;
+    color: var(--body-bg-light-grey);
 }
+
 
 .login_btn{
     color: var(--body-bg-light-grey);
@@ -158,6 +143,7 @@ input:focus{
     background-color: var(--body-bg-light-grey);
 }
 
+
 .links a{
     color: var(--body-bg-light-grey);
 }
@@ -165,5 +151,3 @@ input:focus{
 .links a:hover{
     color: var(--logo-dc-pink);  
 }
-
-
