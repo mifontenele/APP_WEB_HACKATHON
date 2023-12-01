@@ -15,12 +15,14 @@
     --main-dark-text: #262223;
 }
 
+
+
 html, body{
     background-image: linear-gradient(to top,
     rgba(0, 0, 0, 0.8) 0,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0) 75%,
-    rgba(0, 0, 0, 0.7) 100%), url(../assets/img/img-students-2.jpg) !important;
+    rgba(0, 0, 0, 0.5) 40%,
+    rgba(0, 0, 0, 0.5) 75%,
+    rgba(0, 0, 0, 0.8) 100%), url(../assets/img/img-students-2.jpg) !important;
     display: flex;
     align-items: center;
     width: 100%;
@@ -38,13 +40,19 @@ html, body{
     height: 370px;
     margin-top: auto;
     margin-bottom: auto;
-    width: 480px;
+    width: 600px;
     height: auto;
     background-color: rgba(0,0,0,0.8) !important;
 }
 
+.card-header{
+    color: var(--body-bg-light-grey);
+    margin-top: 40px;
+    margin-left: 5px;
+    }
+
 img {
-    width: 55%;
+    width: 80%;
     margin-left: 15px;
     margin-top: 35px;
 }
@@ -52,13 +60,13 @@ img {
 .social_icon{
     position: absolute;
     right: 30px;
-    top: 15px;
+    top: 5px;
 }
 
 .social_icon span{
-    font-size: 35px;
+    font-size: 40px;
     margin-left:10px;
-    margin-top: 20px;  
+    margin-top: 40px;  
     color: var(--logo-dc-pink);
 }
 
@@ -140,7 +148,8 @@ input:focus{
 
 .login_btn:hover{
     color: var(--logo-dc-pink);
-    background-color: var(--body-bg-light-grey);
+    background-color: --main-dark-text;
+    width: 100px;
 }
 
 
@@ -150,4 +159,8 @@ input:focus{
 
 .links a:hover{
     color: var(--logo-dc-pink);  
+}
+.p-2, p{
+    margin-bottom: 10px;
+    color: var(--body-bg-light-grey);
 }
