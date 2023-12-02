@@ -1,0 +1,154 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+:root {
+    /* Paleta de cores que está na WIKI do repósitório do projeto */
+    --body-bg-light-grey:#F0F0F2;
+    --logo-dc-pink:#BF1171;
+    --main-dark-text: #262223;
+}
+
+html, body{
+    background-image: linear-gradient(to top,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 0.5) 40%,
+    rgba(0, 0, 0, 0.5) 75%,
+    rgba(0, 0, 0, 0.8) 100%), url(../assets/img/img-students-2.jpg) !important;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.card{
+    height: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 500px;
+    height: auto;
+    background-color: rgba(0,0,0,0.6) !important;
+}
+
+img {
+    width: 90%;
+    margin-left: 15px;
+}
+
+.img-pg-reset, 
+.img-pg-signup{
+    width: 50%;
+    margin-left: 15px;
+}
+
+.social_icon{
+    position: absolute;
+    right: 30px;
+    top: 5px;
+}
+
+.social_icon span{
+    font-size: 30px;
+    margin-left:10px;
+    margin-top: 40px;  
+    color: var(--logo-dc-pink);
+    opacity: 75%;
+}
+
+.social_icon span:hover{
+    color: var(--body-bg-light-grey);
+    cursor: pointer;
+}
+
+
+.bi-key-fill{
+    color: var(--logo-dc-pink);
+    font-size: 25px;
+}
+
+.bi-envelope-fill{
+    color: var(--logo-dc-pink);
+    font-size: 25px;
+}
+
+.eye_btn{
+    font-size: 25px;
+    color: var(--logo-dc-pink);
+    background-color: var(--body-bg-light-grey);
+    border: none;
+}
+
+.form-control{
+    background-color: var(--body-bg-light-grey);
+    border: none;
+}
+
+.eye_btn:hover{
+    color: var(--body-bg-light-grey);
+    background-color: var(--logo-dc-pink);
+    cursor: pointer;
+    border: none;
+    }
+
+input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.remember,
+.remember span{
+    color: var(--body-bg-light-grey);
+    font-size: smaller;
+}
+
+.remember input{
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    color: var(--body-bg-light-grey);
+}
+
+.login_btn{
+    color: var(--body-bg-light-grey);
+    background-color: var(--logo-dc-pink);
+    width: 100px;
+    opacity: 75%;
+}
+
+.login_btn:hover{
+    color: var(--logo-dc-pink);
+    background-color: var(--main-dark-text);
+    width: 100px;
+}
+
+.signup_btn{
+    color: var(--body-bg-light-grey);
+    background-color: var(--logo-dc-pink);
+}
+
+.signup_btn:hover{
+    color: var(--logo-dc-pink);
+    background-color: var(--main-dark-text);
+}
+
+.links a{
+    color: var(--body-bg-light-grey);
+}
+
+.links a:hover{
+    color: var(--logo-dc-pink);  
+}
+.p-2, p{
+    margin-bottom: 15px;
+    margin-top: 4px;
+    color: var(--body-bg-light-grey);
+    font-size: smaller;
+}
+
+.link-opacity-75-hover, p{
+    font-size: smaller;
+}

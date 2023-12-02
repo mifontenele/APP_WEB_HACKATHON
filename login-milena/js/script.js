@@ -1,3 +1,5 @@
+
+// TODO reviar o script abaixo (pesquisa da internet) para implementar comportamento do EXIBIR SENHA
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const passwordInput = document.getElementById('floatingPassword');
