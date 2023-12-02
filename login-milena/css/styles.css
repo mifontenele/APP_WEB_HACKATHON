@@ -4,33 +4,17 @@
 }
 
 :root {
-    /* Paleta de Cores dos Templates do repositorio do Chico */
-    --card-pink: #FC5D89;
-    --card-purple: #7552F2;
-    --card-orange: #F2784B;
-    --card-blue: #1954FD;
+    /* Paleta de cores que está na WIKI do repósitório do projeto */
     --body-bg-light-grey:#F0F0F2;
-    --logo-dc-purple: #7571F9;
     --logo-dc-pink:#BF1171;
     --main-dark-text: #262223;
-    /* Font Sizes */
-    /* --fs-16: 16px;
-    --fs-18: 18px;
-    --fs-20: 20px;
-    --fs-24: 24px;
-    --fs-26: 26px;
-    --fs-28: 28px;
-    --fs-32: 32px;
-    --fs-40: 40px;
-    --fs-48: 48px;
-    --fs-64: 64px; */
 }
 
 html, body{
     background-image: linear-gradient(to top,
-    rgba(0, 0, 0, 0.8) 0,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0) 75%,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 0.5) 40%,
+    rgba(0, 0, 0, 0.5) 75%,
     rgba(0, 0, 0, 0.8) 100%), url(../assets/img/img-students-2.jpg) !important;
     display: flex;
     align-items: center;
@@ -41,37 +25,38 @@ html, body{
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
-.container{
-    height: 100%;
-    align-content: center;
-}
-
 .card{
-    height: 370px;
+    height: 350px;
     margin-top: auto;
     margin-bottom: auto;
     width: 500px;
     height: auto;
-    background-color: rgba(0,0,0,0.8) !important;
+    background-color: rgba(0,0,0,0.6) !important;
 }
 
 img {
-    width: 55%;
+    width: 90%;
     margin-left: 15px;
-    margin-top: 35px;
+}
+
+.img-pg-reset, 
+.img-pg-signup{
+    width: 50%;
+    margin-left: 15px;
 }
 
 .social_icon{
     position: absolute;
     right: 30px;
-    top: 15px;
+    top: 5px;
 }
 
 .social_icon span{
-    font-size: 35px;
+    font-size: 30px;
     margin-left:10px;
-    margin-top: 20px;  
+    margin-top: 40px;  
     color: var(--logo-dc-pink);
+    opacity: 75%;
 }
 
 .social_icon span:hover{
@@ -79,27 +64,25 @@ img {
     cursor: pointer;
 }
 
-p {
-    color:var(--body-bg-light-grey);
-}
 
 .bi-key-fill{
     color: var(--logo-dc-pink);
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .bi-envelope-fill{
     color: var(--logo-dc-pink);
-    font-size: 30px;
-}
-.form-control{
-    background-color: var(--body-bg-light-grey);
-    border: none;
+    font-size: 25px;
 }
 
 .eye_btn{
     font-size: 25px;
     color: var(--logo-dc-pink);
+    background-color: var(--body-bg-light-grey);
+    border: none;
+}
+
+.form-control{
     background-color: var(--body-bg-light-grey);
     border: none;
 }
@@ -110,31 +93,14 @@ p {
     cursor: pointer;
     border: none;
     }
-/* 
-.card-header{
-    color: var(--body-bg-light-grey);
-    margin-top: 10px;
-    margin-left: 5px;
-} */
-
-.input-group-login span{
-    width: 50px;
-    background-color: var(--logo-dc-pink);
-    color: var(--body-bg-light-grey);
-    border:0 !important;
-}
-
-.input-group-text span {
-    background-color: var(--logo-dc-pink);  
-    color: var(--body-bg-light-grey);
-}
 
 input:focus{
     outline: 0 0 0 0  !important;
     box-shadow: 0 0 0 0 !important;
 }
 
-.remember{
+.remember,
+.remember span{
     color: var(--body-bg-light-grey);
     font-size: smaller;
 }
@@ -142,20 +108,31 @@ input:focus{
 .remember input{
     width: 15px;
     height: 15px;
-    margin-left: 15px;
-    margin-right: 5px;
+    margin-right: 8px;
+    color: var(--body-bg-light-grey);
 }
 
 .login_btn{
     color: var(--body-bg-light-grey);
     background-color: var(--logo-dc-pink);
     width: 100px;
-    height: auto;
+    opacity: 75%;
 }
 
 .login_btn:hover{
     color: var(--logo-dc-pink);
-    background-color: var(--body-bg-light-grey);
+    background-color: var(--main-dark-text);
+    width: 100px;
+}
+
+.signup_btn{
+    color: var(--body-bg-light-grey);
+    background-color: var(--logo-dc-pink);
+}
+
+.signup_btn:hover{
+    color: var(--logo-dc-pink);
+    background-color: var(--main-dark-text);
 }
 
 .links a{
@@ -165,5 +142,13 @@ input:focus{
 .links a:hover{
     color: var(--logo-dc-pink);  
 }
+.p-2, p{
+    margin-bottom: 15px;
+    margin-top: 4px;
+    color: var(--body-bg-light-grey);
+    font-size: smaller;
+}
 
-
+.link-opacity-75-hover, p{
+    font-size: smaller;
+}
