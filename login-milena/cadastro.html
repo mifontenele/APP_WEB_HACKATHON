@@ -2,67 +2,64 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <title>Tela de Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="./css/styles.css">
+	<title>Cadastro</title>
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <section class="row  mt-15 align-items-center">
-                <div class="row">
-                    <img class="img-fluid" src="../assets/logo-digcollege.svg" alt="logo">
-                </div>
-                <div class="row">
-                    <div class="mb-3">
-                        <h6><small>Para criar a sua conta, informe os dados abaixo:</small></h6>
-                    </div>
-                    <form>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput"
-                                placeholder="informe seu nome completo">
-                            <label for="nome">Nome Completo:</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput"
-                                placeholder="informe seu melhor email..">
-                            <label for="email">Email:</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="telefone" class="form-control" id="floatingInput"
-                                placeholder="informe seu telefone...">
-                            <label for="telefone">Telefone:</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="floatingPassword"
-                                placeholder="informa uma senha">
-                            <label for="password">Senha:</label>
-                        </div>
-                        <div class="d-grid mb-3">
-                            <button type="submit" class="btn btn-primary btn-lg">Cadastrar</button>
-                        </div>
-                        <div class="d-grid row">
-                            <div class="btn">
-                                <button class="btn btn-link rounded-pill px-3" type="button">
-                                    <a class="link-opacity-75-hover" href="./index.html">
-                                        Acessar a sua conta</a>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        </div>
-    </main>
-    <script src="./js/script.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+	<div class="container-fluid">
+		<div class="d-flex row justify-content-center align-items-center v-100">
+			<div class="card">
+
+				<div class=" d-flex flex-row mb-0">
+					<div class="d-flex mt-3">
+						<img class="p-2 img-pg-signup" src="./assets/logo-digital.png" alt="">
+					</div>
+				</div>
+
+				<div class="card-body">
+					<small><p class="mb-2">Informe os dados abaixo:</p></small>
+					<!-- TODO Mudar a largura e tamanho da fonte dos inputs (mais estreitos e responsivos) -->
+					<form>
+						<div class="input-group mb-2">
+							<span class="input-group-text" id="inputGroup-sizing-default">Nome:</span>
+							<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div>
+						<div class="input-group mb-2">
+							<span class="input-group-text" id="inputGroup-sizing-default">Email:</span>
+							<input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div>
+						<div class="input-group mb-2">
+							<span class="input-group-text" id="inputGroup-sizing-default">CPF:</span>
+							<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div>
+						<div class="input-group mb-2">
+							<span class="input-group-text" id="inputGroup-sizing-default">Senha:</span>
+							<input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div>
+						<div class="input-group mb-2">
+							<span class="input-group-text" id="inputGroup-sizing-default">Repetir Senha:</span>
+							<input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div>
+												<div class="d-grid mb-3">
+							<button type="submit" class="btn signup_btn">Cadastrar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+
+<script src="./js/script.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+	crossorigin="anonymous"></script>
+
 </html>
